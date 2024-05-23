@@ -15,6 +15,7 @@ The Invoice System is a Python application built using Tkinter and FPDF librarie
 <br>
 
 ## Requirements
+```
 Python 3.x
 Tkinter library (comes pre-installed with Python)
 FPDF library (install using pip install fpdf)
@@ -54,9 +55,12 @@ Main Components
 GUI Elements: Labels, Entry fields, Text widget, and Buttons are used to create the interface.
 Invoice List: The invoice details are stored in a list named self.invoice.
 Total Amount: The total amount is calculated and displayed using self.total_amount and self.total_amount_label.
+```
+
 <br>
 
 ## Methods
+```
 __init__(self, root): Initializes the GUI components and sets up the layout.
 add_data_invoice(self): Retrieves data from the entry fields, validates it, updates the invoice list, and refreshes the display.
 update_invoice_text(self): Updates the text widget with the current invoice details.
@@ -65,6 +69,7 @@ generate_pdf(self): Generates a PDF of the invoice and saves it to a user-specif
 clear_entries(self): Clears all input fields, resets the invoice list and total amount.
 save_data(self): Saves the current invoice data to a file.
 load_data(self): Loads invoice data from a file and updates the display.
+```
 <br>
 
 ## Error Handling
