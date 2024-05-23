@@ -92,8 +92,8 @@ python invoice_system.py
 <br>
 
 # SCREENSHOTS
-<img width ="500" height="500" alt="bill-app" src="https://github.com/sukhe3608/Invoice-app/blob/main/bill-app.png">
+<img width="500" height="500" alt="bill-app" src="https://raw.githubusercontent.com/sukhe3608/Invoice-app/main/bill-app.png">
 
 <br>
 
-<img width ="500" height ="500" alt="pdf_billing" src = " https://github.com/sukhe3608/Invoice-app/blob/main/billing-pdf.png">
+<img width="500" height="500" alt="pdf_billing" src="https://raw.githubusercontent.com/sukhe3608/Invoice-app/main/billing-pdf.png">
