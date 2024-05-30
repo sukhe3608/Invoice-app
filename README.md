@@ -8,10 +8,11 @@ The Invoice System is a Python application built using Tkinter and FPDF librarie
 1. Add customer and product details to create an invoice.
 2. Display the invoice details in a text widget.
 3. Calculate and display the total amount.
-4. Generate a PDF version of the invoice.
-5. Save the invoice data to a file.
-6. Load invoice data from a file.
-7. Clear all entries and reset the invoice.
+4. Show current date time on the bill.
+5. Generate a PDF version of the invoice.
+6. Save the invoice data to a file.
+7. Load invoice data from a file.
+8. Clear all entries and reset the invoice.
 <br>
 
 ## Requirements
@@ -27,6 +28,10 @@ The Invoice System is a Python application built using Tkinter and FPDF librarie
 2. Install the FPDF library using pip:
 ```
 pip install fpdf
+```
+3. Install the datetime library using pip:
+```
+pip install datetime
 ```
 <br>
 
