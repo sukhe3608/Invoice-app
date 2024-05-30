@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 from fpdf import FPDF
 from tkinter import filedialog
+from datetime import datetime 
 
 class InvoiceSystem:
     def __init__(self , root):
@@ -90,11 +91,18 @@ class InvoiceSystem:
         pdf = FPDF()
         pdf.add_page()
         pdf.set_font("Arial", size=12)
+        current_date_time = datetime.now().strftime("%Y-%m-%d  %H-%M-%S")
         pdf.cell(200, 10, txt="INVOICE", ln=True, align='C')
         pdf.cell(200, 10, txt="GST IN. : *******************", ln=True)
+        pdf.cell(200, 10, txt="Date : "+current_date_time, ln=True)
+        pdf.cell(200, 10, txt="+---------------------------------------------------------------------------------------------------------------------------------+", ln=True)
+        
+        
         pdf.cell(200, 10, txt="From : XYZ..", ln=True,align='L')
         pdf.cell(200, 10, txt="To Customer: " + self.customer_name_entry.get(), ln=True)
-        pdf.cell(200, 10, txt="+-------------------------------------------------------------------------------------------------------------------------------+", ln=True)
+        pdf.cell(200, 10, txt="+---------------------------------------------------------------------------------------------------------------------------------+", ln=True)
+       
+
         pdf.cell(100, 10, txt="Product Name", border=1)
         pdf.cell(30, 10, txt="Quantity", border=1)
         pdf.cell(30, 10, txt="Price", border=1)
