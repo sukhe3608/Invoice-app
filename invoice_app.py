@@ -91,7 +91,7 @@ class InvoiceSystem:
         pdf = FPDF()
         pdf.add_page()
         pdf.set_font("Arial", size=12)
-        current_date_time = datetime.now().strftime("%Y-%m-%d  %H-%M-%S")
+        current_date_time = datetime.now().strftime("%Y-%m-%d  %H : %M : %S")
         pdf.cell(200, 10, txt="INVOICE", ln=True, align='C')
         pdf.cell(200, 10, txt="GST IN. : *******************", ln=True)
         pdf.cell(200, 10, txt="Date : "+current_date_time, ln=True)
